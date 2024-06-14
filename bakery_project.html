@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Cake Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #f4a261;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('images/background_image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 10px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section#about {
+            background-color: #e76f51;
+            color: white;
+        }
+
+        section#gallery .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        section#gallery .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #264653;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+
+        #contact {
+    padding-bottom: 50px; /* To create some space for the payment buttons */
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.payment-buttons button {
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+}
+
+.payment-buttons button:hover {
+    background-color: #00568c;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">KB Cakes Nepal</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#flavour">Flavour</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Our Bakery</h1>
+            <p>Delicious cakes made with love.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our bakery offers the finest cakes made with fresh ingredients and a lot of love. Come and taste the difference!</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Cakes</h2>
+        <div class="gallery">
+            <img src="images/cake_babby.png" alt="Cake 1">
+            <img src="images/babby_boy.jpeg" alt="Cake 2">
+            <img src="images/babby_cute.jpeg" alt="Cake 3">
+            <img src="images/babbygirl_cake.jpeg" alt="Cake 4">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: kbcakesnepal2315@gmail.com</p>
+        <p>Phone: 9860855802</p>
+    </section>
+
+    <section id="contact">
+        <div class="payment-buttons">
+            <button class="paypal-button">Pay with eSewa</button>
+            <button class="stripe-button">Pay with Khalti</button>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Bakery Cake Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
